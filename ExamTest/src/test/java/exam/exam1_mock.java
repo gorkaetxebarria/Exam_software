@@ -17,6 +17,7 @@ public class exam1_mock extends EasyMockSupport {
 
     @Test
     public void examMockTest() {
+
         EasyMock.expect(exam1.oneHalf(2)).andReturn(1);
         EasyMock.expect(exam1.getRestZero(2, 1)).andReturn(false);
         replayAll();

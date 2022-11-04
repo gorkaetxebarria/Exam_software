@@ -9,10 +9,10 @@ import java.util.Collection;
 import java.util.List;
 
 @RunWith(value = Parameterized.class)
+
 public class exam1_unitTesting extends TestCase {
     int n;
     boolean expected;
-
 
     @Parameterized.Parameters
     public static Collection<Object[]> numbers(){
@@ -30,8 +30,7 @@ public class exam1_unitTesting extends TestCase {
                 {10,false},
         });
     }
-
-    public  exam1_unitTesting(int n, boolean expected) {
+    public exam1_unitTesting(int n, boolean expected) {
         this.n = n;
         this.expected = expected;
     }
