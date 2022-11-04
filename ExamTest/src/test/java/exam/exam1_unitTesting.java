@@ -1,6 +1,7 @@
 package exam;
 
 import junit.framework.TestCase;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -13,6 +14,12 @@ import java.util.List;
 public class exam1_unitTesting extends TestCase {
     int n;
     boolean expected;
+    exam1 examn;
+
+    @Before
+    public void setUp() throws Exception {
+        examn= new exam1();
+    }
 
     @Parameterized.Parameters
     public static Collection<Object[]> numbers(){
@@ -37,6 +44,7 @@ public class exam1_unitTesting extends TestCase {
 
     @Test
     public void TestExam() {
-        assertEquals(expected, exam1.exam(n));
+
+        assertEquals(expected, examn.exam(n));
     }
 }

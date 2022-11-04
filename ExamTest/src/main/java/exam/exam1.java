@@ -10,7 +10,7 @@ package exam;//Create a PUBLIC repository in GitLab
 
 public class exam1 {
 
-    public static boolean exam(int n){
+    public boolean exam(int n){
         int i,m=0;
         boolean flag=true;
         m=oneHalf(n);
@@ -28,11 +28,11 @@ public class exam1 {
         return flag;
     }
 
-    static boolean getRestZero(int a, int b) {
+    public boolean getRestZero(int a, int b) {
         return a % b == 0;
     }
 
-    public static int oneHalf (int n) {
+    public int oneHalf (int n) {
         return n/2;
     }
 
